@@ -1,0 +1,23 @@
+.header {
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.instagram-icon {
+    color: black
+}
+
