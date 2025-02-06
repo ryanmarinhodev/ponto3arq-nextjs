@@ -1,23 +1,80 @@
-.header {
-    padding: 0;
-}
-
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    justify-content: space-between;
+    max-width: 2000px; 
     margin: 0 auto;
     padding: 0 20px;
-  
+    background-color: aqua;
+    position: relative;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.left-links,
+.right-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: yellow;
+}
+
+
+.open {
+    flex-direction: column;
+    position: fixed;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1e1f;
+    justify-content: center;
+    align-items: center;
+    animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.left-links {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+
+.right-links {
+    flex: 1; 
+    justify-content: flex-end;
+}
+
+
+.hidden-links {
+    visibility: hidden;
+    width: 0;
+    overflow: hidden;
 }
 
 .logo-container {
+    flex: 1;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    background-color: red;
+ 
+}
+
+.logo {
+    width: 250px;
+    height: 55px;
 }
 
 .instagram-icon {
-    color: black
+    color: black;
 }
 
+@media (max-width: 768px) {
+
+
+    .hamburguer {
+        display: flex;
+    }
+}
