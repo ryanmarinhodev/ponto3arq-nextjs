@@ -42,8 +42,9 @@ export function Header() {
             <Image src={Logo} alt="Logo" className="logo" />
           </Link>
         </div>
-
-        <div className="right-links">
+        <div
+          className={`right-links : ${navItem ? "instaOpen" : "instaClose"}`}
+        >
           <Link href="/" target="_blank" className="instagram-icon">
             <FaInstagram size={20} />
           </Link>
