@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaInstagram } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles.css";
 
 export function Header() {
@@ -18,6 +18,22 @@ export function Header() {
   const logoItemClick = () => {
     setLogoItem(!logoItem);
   };
+
+  //Bloequar a rolagem da página quando o menu estiver aberto
+  useEffect(() => {
+    if (navItem) {
+      document.body.style.overflow = "hidden"; // Bloqueia o scroll
+      document.documentElement.style.overflow = "hidden"; // Bloqueia o scroll também no HTML
+    } else {
+      document.body.style.overflow = "auto"; // Restaura o scroll
+      document.documentElement.style.overflow = "auto"; // Restaura o scroll também no HTML
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto";
+    };
+  }, [navItem]);
 
   return (
     <header className="header">
