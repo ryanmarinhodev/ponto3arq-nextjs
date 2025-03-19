@@ -30,7 +30,6 @@ body {
   box-sizing: border-box;
 }
 
-
 .gallery-item {
   position: relative;
   overflow: hidden;
@@ -64,11 +63,13 @@ body {
   height: auto;
   transition: filter 0.3s ease;
   filter: grayscale(100%);
+  cursor: pointer;
 }
 
 .galeryall img:hover {
   filter: grayscale(0%);
 }
+
 
 .text-image {
   position: absolute;

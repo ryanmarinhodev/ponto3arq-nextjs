@@ -36,6 +36,10 @@ export const HomePage = () => {
       {/* Imagens que ocupará 100% da tela */}
       <div className="galeryall">
         <img src={casaAT.src} alt="Imagem 4" />
+        <div className="text-image">
+          <span className="title">CASA AT</span>
+          <span className="date">2023</span>
+        </div>
       </div>
     </>
   );
