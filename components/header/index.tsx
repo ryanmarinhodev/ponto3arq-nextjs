@@ -10,9 +10,13 @@ import "./styles.css";
 
 export function Header() {
   const [navItem, setNavItem] = useState(false);
+  const [logoItem, setLogoItem] = useState(false);
 
   const clickMenu = () => {
     setNavItem(!navItem);
+  };
+  const logoItemClick = () => {
+    setLogoItem(!logoItem);
   };
 
   return (
@@ -24,20 +28,28 @@ export function Header() {
 
         {/* Menu Links */}
         <div className={`left-links ${navItem ? "open" : "close"}`}>
-          <Link href="/">Escritório</Link>
-          <Link href="/contatos">Contato</Link>
+          <Link className="Links" href="/" onClick={clickMenu}>
+            Escritório
+          </Link>
+          <Link className="Links" href="/contatos" onClick={clickMenu}>
+            Contato
+          </Link>
         </div>
 
         {/* Logo */}
         <div className="logo-container">
-          <Link href="/">
+          <Link href="/" onClick={logoItemClick}>
             <Image src={Logo} alt="Logo" className="logo" />
           </Link>
         </div>
 
         {/* Instagram Icon */}
         <div className={`right-links ${navItem ? "instaOpen" : "instaClose"}`}>
-          <Link href="/" target="_blank" className="instagram-icon">
+          <Link
+            href="https://www.instagram.com/ponto3arquitetura/?hl=pt"
+            target="_blank"
+            className="instagram-icon"
+          >
             <FaInstagram size={20} />
           </Link>
         </div>

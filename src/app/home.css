@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.namesLinks {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .LinksNext {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+  } 
+  
+ /* Estilização da galeria */
+  .gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas por padrão */
+    gap: 5px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* cada item da galeria */
+  .gallery-item img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+
+  /* Estilo para imagens 100% */
+  .galeryall {
+    width: 100%;
+    display: grid;
+    gap: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+
+  .galeryall img {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Responsividade: tela pequena */
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+  }
+  
+  #interiores {
+    background-color: lightgreen;
+  }
+  
+  #comercial {
+    background-color: lightyellow;
+  }
+  
+
+
+  @media(max-width: 768px) {
+    .LinksNext {
+      display: none;
+    }
+  }
+  
