@@ -1,15 +1,18 @@
 import casaAT from "../../assets/arquitetura/2-CAPA.webp";
+import Link from "next/link";
 
 export const HomePage = () => {
   return (
     <>
       <div className="gallery">
         <div className="gallery-item">
-          <img src={casaAT.src} alt="Imagem 1" />
-          <div className="text-image">
-            <span className="title">CASA AT</span>
-            <span className="date">2023</span>
-          </div>
+          <Link href={"/projetos/casa-at"}>
+            <img src={casaAT.src} alt="Imagem 1" />
+            <div className="text-image">
+              <span className="title">CASA AT</span>
+              <span className="date">2023</span>
+            </div>
+          </Link>
         </div>
         <div className="gallery-item">
           <img src={casaAT.src} alt="Imagem 1" />

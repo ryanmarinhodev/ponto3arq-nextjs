@@ -4,7 +4,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import LinkNext from "next/link";
-import "../../src/app/home.css";
+import "./styles.css";
 
 export default function ScrollLinks() {
   const [isClient, setIsClient] = useState(false);
