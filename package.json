@@ -17,7 +17,8 @@
     "react-scroll": "^1.9.3",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.14",
+    "yet-another-react-lightbox": "^3.21.8"
   },
   "devDependencies": {
     "@types/node": "^20",
