@@ -1,3 +1,4 @@
+import Image from "next/image";
 import casaAT from "../../assets/arquitetura/2-CAPA.webp";
 import Link from "next/link";
 
@@ -7,7 +8,7 @@ export const HomePage = () => {
       <div className="gallery">
         <div className="gallery-item">
           <Link href={"/projetos/casa-at"}>
-            <img src={casaAT.src} alt="Imagem 1" />
+            <Image src={casaAT.src} alt="Imagem 1" width={500} height={300} />
             <div className="text-image">
               <span className="title">CASA AT</span>
               <span className="date">2023</span>
@@ -36,8 +37,9 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
+
       {/* Imagens que ocupará 100% da tela */}
-      <div className="galeryall">
+      <div className="galleryall">
         <img src={casaAT.src} alt="Imagem 4" />
         <div className="text-image">
           <span className="title">CASA AT</span>
