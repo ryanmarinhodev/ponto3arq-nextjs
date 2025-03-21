@@ -1,0 +1,9 @@
+import styles from "./spinner.module.css";
+
+export const Spinner = () => {
+  return (
+    <div className={styles.overlay}>
+      <div className={styles.loader}></div>
+    </div>
+  );
+};
