@@ -42,11 +42,30 @@
     z-index: 1;
     overflow: hidden;
   }
+
+
+  .instagram-icon-mobile {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;  /* right se for o caso de ir para direita */
+    color: #333;
+    z-index: 9999;
+  }
+
   
   .close {
     display: none;
   }
-  
+
+  .instaClose {
+    visibility: hidden;
+  }
+
+  .instaOpen {
+    visibility: hidden;
+  }
+
+
   .right-links {
     flex: 1;
     justify-content: flex-end;
@@ -74,10 +93,14 @@
   .instagram-icon {
     color: black;
   }
+
   
   @media (max-width: 768px) {
     .hamburguer {
       display: flex;
     }
+
+    
+    
   }
   
