@@ -7,6 +7,7 @@ import "yet-another-react-lightbox/styles.css";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Spinner } from "../../components/spinner/spinner";
+import { ScrollTop } from "../../components/scroll-top/scroll";
 
 const projetos = {
   "casa-at": {
@@ -69,6 +70,7 @@ export default function Projeto({ projeto }: { projeto: any }) {
           />
         </div>
       </div>
+      <ScrollTop />
     </>
   );
 }
