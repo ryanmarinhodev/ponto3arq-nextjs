@@ -17,13 +17,14 @@
   .right-links {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
   }
   
 
   .Links {
     text-decoration: none;
     color: #050202;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   .open {
@@ -98,9 +99,14 @@
   @media (max-width: 768px) {
     .hamburguer {
       display: flex;
+
     }
 
-    
+    .logo {
+      width: 150px;
+      height: 30px;
+      margin-top: 8px;
+    }
     
   }
   
