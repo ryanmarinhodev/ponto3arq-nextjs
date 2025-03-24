@@ -1,6 +1,7 @@
 import Image from "next/image";
 import casaAT from "../../assets/arquitetura/2-CAPA.webp";
 import Link from "next/link";
+import { ScrollTop } from "../scroll-top/scroll";
 
 export const HomePage = () => {
   return (
@@ -46,6 +47,8 @@ export const HomePage = () => {
           <span className="date">2023</span>
         </div>
       </div>
+
+      <ScrollTop />
     </>
   );
 };
