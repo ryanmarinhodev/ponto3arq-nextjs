@@ -43,13 +43,23 @@ export function Header() {
         </div>
 
         {/* Menu Links */}
-        <div className={`left-links ${navItem ? "open" : "close"}`}>
-          <Link className="Links" href="/" onClick={clickMenu}>
-            Escritório
-          </Link>
-          <Link className="Links" href="/contatos" onClick={clickMenu}>
-            Contato
-          </Link>
+        <div className="Container-Links-Modal">
+          <div className={`left-links ${navItem ? "open" : "close"}`}>
+            <Link className="Links" href="/" onClick={clickMenu}>
+              Escritório
+            </Link>
+            <Link className="Links" href="/contatos" onClick={clickMenu}>
+              Contato
+            </Link>
+
+            <Link
+              href="https://www.instagram.com/ponto3arquitetura/?hl=pt"
+              target="_blank"
+              className="instagram-icon-mobile"
+            >
+              <FaInstagram size={20} />
+            </Link>
+          </div>
         </div>
 
         {/* Logo */}
