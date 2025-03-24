@@ -1,4 +1,3 @@
-// Certifique-se de que 'use client' está na primeira linha
 "use client";
 
 import { useEffect, useState } from "react";
@@ -16,14 +15,19 @@ export default function ScrollLinks() {
   if (!isClient) return null;
 
   return (
-    <div className="namesLinks">
-      <Link to="arquitetura" smooth={true} duration={500}>
+    <div className="namesLinks-Container">
+      <Link
+        to="arquitetura"
+        className="namesLinks"
+        smooth={true}
+        duration={500}
+      >
         <span>ARQUITETURA</span>
       </Link>
-      <Link to="interiores" smooth={true} duration={500}>
+      <Link to="interiores" className="namesLinks" smooth={true} duration={500}>
         <span>INTERIORES</span>
       </Link>
-      <Link to="comercial" smooth={true} duration={500}>
+      <Link to="comercial" className="namesLinks" smooth={true} duration={500}>
         <span>COMERCIAL</span>
       </Link>
       <LinkNext href="/escritorio" className="LinksNext">

@@ -1,21 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Play:wght@400;700&display=swap');
+
 body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.namesLinks-Container {
+  display: flex;
+  padding: 13px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-family: "Play", sans-serif;
+  font-size: 12px;
+}
+
+.namesLinks {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #333;
+}
+
+.LinksNext {
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.namesLinks:hover {
+  color:#A9A9A9
+}
+
+.LinksNext:hover {
+  color: #A9A9A9;;
+}
+
+@media(max-width: 768px) {
   .namesLinks {
-      display: flex;
-      padding: 13px;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      margin-top: 50px;
-      color: black;
-      cursor: pointer;
-    }
-    
-    .LinksNext {
-      cursor: pointer;
-      color: black;
-      text-decoration: none;
-    } 
+    font-size: 10px;
+  }
+}
