@@ -64,7 +64,7 @@ export function Header() {
 
         {/* Logo */}
         <div className="logo-container">
-          <Link href="/" onClick={logoItemClick}>
+          <Link href="/" onClick={navItem ? clickMenu : logoItemClick}>
             <Image src={Logo} alt="Logo" className="logo" />
           </Link>
         </div>
