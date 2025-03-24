@@ -1,6 +1,4 @@
 import { Header } from "../../components/header";
-import Image2 from "../../assets/arquitetura/3.webp";
-import Image3 from "../../assets/06.webp";
 import Lightbox from "yet-another-react-lightbox";
 import "./dentroProject.css";
 import "yet-another-react-lightbox/styles.css";
@@ -8,21 +6,53 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Spinner } from "../../components/spinner/spinner";
 import { ScrollTop } from "../../components/scroll-top/scroll";
+import Image from "next/image";
 
 const projetos = {
   "casa-at": {
     titulo: "Casa AT",
     descricao: "Uma casa moderna e sofisticada.",
-    imagens: [Image2.src, Image3.src, Image2.src],
+    imagens: [
+      "/assets/arquitetura/casaAt/1.webp",
+      "/assets/arquitetura/casaAt/2-CAPA.webp",
+      "/assets/arquitetura/casaAt/3.webp",
+      "/assets/arquitetura/casaAt/4.webp",
+      "/assets/arquitetura/casaAt/planta.jpg",
+    ],
   },
-  "casa-moderna": {
+  "casa-ehe": {
     titulo: "Casa Moderna",
     descricao: "Minimalismo e conforto em um só lugar.",
     imagens: [
-      "/assets/arquitetura/3.webp",
-      "/assets/arquitetura/2-CAPA.webp",
-      "/assets/arquitetura/3.webp",
+      "/assets/arquitetura/casaEhe/01.webp",
+      "/assets/arquitetura/casaEhe/02.webp",
+      "/assets/arquitetura/casaEhe/03.webp",
+      "/assets/arquitetura/casaEhe/04.webp",
+      "/assets/arquitetura/casaEhe/05.webp",
+      "/assets/arquitetura/casaEhe/06.webp",
+      "/assets/arquitetura/casaEhe/planta1.jpg",
+      "/assets/arquitetura/casaEhe/planta2.jpg",
+      "/assets/arquitetura/casaEhe/planta3.jpg",
     ],
+  },
+  "casa-fel": {
+    titulo: "Casa Moderna",
+    descricao: "Minimalismo e conforto em um só lugar.",
+    imagens: [
+      "/assets/arquitetura/casaFel/1.webp",
+      "/assets/arquitetura/casaFel/2.webp",
+      "/assets/arquitetura/casaFel/3.webp",
+      "/assets/arquitetura/casaFel/4.webp",
+      "/assets/arquitetura/casaFel/5.webp",
+      "/assets/arquitetura/casaFel/6-planta1.jpg",
+      "/assets/arquitetura/casaFel/07-planta2.jpg",
+      "/assets/arquitetura/casaFel/08-planta3.jpg",
+    ],
+  },
+  "casa-glc": {
+    titulo: "Casa Moderna",
+    descricao: "Minimalismo e conforto em um só lugar.",
+    imagens: ["/assets/arquitetura/casaGlc/glc1-_1__1.webp"],
   },
 };
 
@@ -53,11 +83,13 @@ export default function Projeto({ projeto }: { projeto: any }) {
       <div className="projeto-container">
         <div className="image-gallery" onClick={() => setOpen(true)}>
           {projeto.imagens.map((img: string, index: number) => (
-            <img
+            <Image
               className="projeto-imagem"
               key={index}
               src={img}
               alt={`Imagem ${index + 1}`}
+              width={700}
+              height={300}
               onClick={() => abrirImagem(index)}
             />
           ))}
