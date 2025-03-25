@@ -1,7 +1,8 @@
 import React from "react";
 import "./home.css";
 import ScrollLinks from "../../components/scrollLinks/scrollLinks";
-import { HomePage } from "../../components/home";
+import { HomeArquitetura } from "../../components/home";
+import { HomeInterioes } from "../../components/home/interioes";
 
 export default function Home() {
   return (
@@ -10,14 +11,11 @@ export default function Home() {
 
       {/* Seções de conteúdo */}
       <div id="arquitetura">
-        <HomePage />
+        <HomeArquitetura />
       </div>
 
-      <div
-        id="interiores"
-        style={{ height: "100vh", backgroundColor: "lightgreen" }}
-      >
-        <h2>INTERIORES</h2>
+      <div id="interiores">
+        <HomeInterioes />
       </div>
       <div
         id="comercial"
