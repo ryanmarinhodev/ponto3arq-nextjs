@@ -19,7 +19,11 @@
   width: 100%;
   height: auto;
   transition: filter 0.3s ease;
-  filter: grayscale(100%)
+  filter: grayscale(100%);
+  aspect-ratio: 16/9; 
+  object-fit: cover;
+  /* Aspect-ratio leva a propoção 16:9
+  Objetic cover ajusta a imagem para não ficar esticada */
 }
 
 .gallery-item:hover img {
@@ -43,6 +47,8 @@
   transition: filter 0.3s ease;
   filter: grayscale(100%);
   cursor: pointer;
+  aspect-ratio: 16/9; 
+  object-fit: cover;
 }
 
 .gallery-item:hover .text-image,
@@ -99,16 +105,6 @@
       display: none;
     }
   }
-  
-  #interiores {
-    background-color: lightgreen;
-  }
-  
-  #comercial {
-    background-color: lightyellow;
-  }
-  
-
 
   @media(max-width: 768px) {
     .LinksNext {
