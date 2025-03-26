@@ -25,7 +25,7 @@ export const HomeInterioes = () => {
         </div>
         <div className="gallery-item">
           <Link href={"/projetos/interiores/apt-edj"}>
-            <Image src={aptEDJ.src} alt="Imagem 1" width={500} height={300} />
+            <Image src={aptEDJ.src} alt="Imagem 2" width={500} height={300} />
             <div className="text-image">
               <span className="title">APT EDJ</span>
               <span className="date">2022</span>
@@ -34,7 +34,7 @@ export const HomeInterioes = () => {
         </div>
         <div className="gallery-item">
           <Link href={"/projetos/interiores/apt-eea"}>
-            <Image src={aptEEA.src} alt="Imagem 1" width={500} height={300} />
+            <Image src={aptEEA.src} alt="Imagem 3" width={500} height={300} />
             <div className="text-image">
               <span className="title">APT EEA</span>
               <span className="date">2023</span>
@@ -43,7 +43,7 @@ export const HomeInterioes = () => {
         </div>
         <div className="gallery-item">
           <Link href={"/projetos/interiores/apt-rbc"}>
-            <Image src={aptRBC.src} alt="Imagem 1" width={500} height={300} />
+            <Image src={aptRBC.src} alt="Imagem 4" width={500} height={300} />
             <div className="text-image">
               <span className="title">APT RBC</span>
               <span className="date">2022</span>
@@ -52,7 +52,7 @@ export const HomeInterioes = () => {
         </div>
         <div className="gallery-item">
           <Link href={"/projetos/interiores/apt-tep"}>
-            <Image src={aptTEA.src} alt="Imagem 1" width={500} height={300} />
+            <Image src={aptTEA.src} alt="Imagem 5" width={500} height={300} />
             <div className="text-image">
               <span className="title">APT TEP</span>
               <span className="date">2023</span>
@@ -61,7 +61,7 @@ export const HomeInterioes = () => {
         </div>
         <div className="gallery-item">
           <Link href={"/projetos/interiores/apt-fef"}>
-            <Image src={aptFEF.src} alt="Imagem 1" width={500} height={300} />
+            <Image src={aptFEF.src} alt="Imagem 6" width={500} height={300} />
             <div className="text-image">
               <span className="title">APT FEF</span>
               <span className="date">2019</span>
@@ -72,7 +72,7 @@ export const HomeInterioes = () => {
       {/* Imagens que ocupará 100% da tela */}
       <div className="galleryall">
         <Link href={"/projetos/interiores/casa-mem"}>
-          <img src={aptMEM.src} alt="Imagem 4" />
+          <img src={aptMEM.src} alt="Imagem 7" />
           <div className="text-image">
             <span className="title">CASA MEM</span>
             <span className="date">2023</span>
