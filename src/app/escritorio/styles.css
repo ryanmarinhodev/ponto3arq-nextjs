@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Play:wght@400;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #ffffff;
+    text-align: justify;
+}
+
+.container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.container span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #A9A9A9;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    font-family: 'Play', sans-serif;
+}
+
+.container p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    max-width: 90%;
+    font-weight: 300;
+    font-family: 'Play', sans-serif;
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+    padding: 20px;
+    max-width: 95%;
+    }
+
+    .container img {
+    max-width: 100%;
+    }
+
+    .container span {
+    font-size: 18px;
+    }
+
+    .container p {
+    font-size: 14px;
+    }
+}
