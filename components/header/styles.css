@@ -1,59 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Play:wght@400;700&display=swap');
+
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-top: 8px;
-    position: relative;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 8px;
+  position: relative;
+}
+  
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
 
+.left-links,
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+  
+
+.Links {
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Play', sans-serif;
+}
+
+.open {
+  flex-direction: column;
+  position: fixed;
+  top: 53px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+
+.instagram-icon-mobile {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;  /* right se for o caso de ir para direita */
+  color: #333;
+  z-index: 9999;
+}
+
+
+
+
+
+
+.instaOpen {
+  visibility: hidden;
+}
+
+
+.right-links {
+  flex: 1;
+  justify-content: flex-end;
+  margin-top: 3.5px;
+  /* instagram incon qualquer coisa remover isso */
+}
+
+.logo-container {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: auto;
+}
+
+.logo {
+  width: 200px;
+  height: 40px;
+}
+
+.instagram-icon {
+  color: #333;
+}
+
+
+@media (max-width: 768px) {
   .hamburguer {
-    display: none;
-    cursor: pointer;
-  }
-  .left-links,
-  .right-links {
     display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
 
-  .Links {
-    text-decoration: none;
-    color: #050202;
-    font-family: Arial, Helvetica, sans-serif;
   }
 
-  .open {
-    flex-direction: column;
-    position: fixed;
-    top: 53px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    z-index: 1;
-    overflow: hidden;
+  .logo {
+    width: 150px;
+    height: 30px;
+    margin-top: 8px;
   }
 
-
-  .instagram-icon-mobile {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;  /* right se for o caso de ir para direita */
-    color: #333;
-    z-index: 9999;
-  }
-
-  
   .close {
     display: none;
   }
@@ -61,52 +116,12 @@
   .instaClose {
     visibility: hidden;
   }
+  
+}
 
-  .instaOpen {
+@media (min-width: 800px) {
+  .isHome {
     visibility: hidden;
   }
+}
 
-
-  .right-links {
-    flex: 1;
-    justify-content: flex-end;
-    margin-top: 7px;
-    /* instagram incon qualquer coisa remover isso */
-  }
-  
-  .logo-container {
-    flex: 0 1 auto;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    width: auto;
-  }
-  
-  .logo {
-    width: 200px;
-    height: 40px;
-  }
-  
-  .instagram-icon {
-    color: black;
-  }
-
-  
-  @media (max-width: 768px) {
-    .hamburguer {
-      display: flex;
-
-    }
-
-    .logo {
-      width: 150px;
-      height: 30px;
-      margin-top: 8px;
-    }
-    
-  }
-  
