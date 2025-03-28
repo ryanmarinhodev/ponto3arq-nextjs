@@ -23,7 +23,6 @@
   gap: 10px;
 }
   
-
 .Links {
   text-decoration: none;
   color: #333;
@@ -48,8 +47,6 @@
   overflow: hidden;
 }
 
-
-
 .instagram-icon-mobile {
   position: fixed;
   bottom: 20px;
@@ -58,15 +55,9 @@
   z-index: 9999;
 }
 
-
-
-
-
-
 .instaOpen {
   visibility: hidden;
 }
-
 
 .right-links {
   flex: 1;
@@ -118,6 +109,8 @@
   }
   
 }
+
+
 
 @media (min-width: 800px) {
   .isHome {
