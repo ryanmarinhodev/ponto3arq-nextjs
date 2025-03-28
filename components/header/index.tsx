@@ -53,10 +53,18 @@ export function Header() {
               isHome ? "isHome" : "notHome"
             }`}
           >
-            <Link className="Links" href="/" onClick={clickMenu}>
+            <Link
+              className="Links"
+              href="/escritorio"
+              onClick={navItem ? clickMenu : logoItemClick}
+            >
               Escritório
             </Link>
-            <Link className="Links" href="/contatos" onClick={clickMenu}>
+            <Link
+              className="Links"
+              href="/contatos"
+              onClick={navItem ? clickMenu : logoItemClick}
+            >
               Contato
             </Link>
 
