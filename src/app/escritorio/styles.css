@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     max-width: 1000px;
-    margin: 60px auto;
+    margin: 10px auto;
     padding: 30px;
     background: #ffffff;
     text-align: justify;
@@ -32,7 +32,7 @@
     font-size: 14px;
     color: #666;
     line-height: 1.5;
-    max-width: 90%;
+    max-width: 94%;
     font-weight: 300;
     font-family: 'Play', sans-serif;
     
@@ -50,6 +50,7 @@
 
     .container span {
     font-size: 18px;
+    text-align: left;
     }
 
     .container p {
