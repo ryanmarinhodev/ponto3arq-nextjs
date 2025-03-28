@@ -1,4 +1,5 @@
 "use client";
+
 import Logo from "../../public/logo.jpg";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,11 +7,14 @@ import { FaInstagram } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import "./styles.css";
 
 export function Header() {
   const [navItem, setNavItem] = useState(false);
   const [logoItem, setLogoItem] = useState(false);
+  const pathname = usePathname(); //Verifica a rota
+  const isHome = pathname === "/";
 
   const clickMenu = () => {
     setNavItem(!navItem);
@@ -19,7 +23,7 @@ export function Header() {
     setLogoItem(!logoItem);
   };
 
-  //Bloequar a rolagem da página quando o menu estiver aberto
+  // Bloquear a rolagem da página quando o menu estiver aberto
   useEffect(() => {
     if (navItem) {
       document.body.style.overflow = "hidden"; // Bloqueia o scroll
@@ -44,7 +48,11 @@ export function Header() {
 
         {/* Menu Links */}
         <div className="Container-Links-Modal">
-          <div className={`left-links ${navItem ? "open" : "close"}`}>
+          <div
+            className={`left-links ${navItem ? "open" : "close"} ${
+              isHome ? "isHome" : "notHome"
+            }`}
+          >
             <Link className="Links" href="/" onClick={clickMenu}>
               Escritório
             </Link>
@@ -74,7 +82,7 @@ export function Header() {
           <Link
             href="https://www.instagram.com/ponto3arquitetura/?hl=pt"
             target="_blank"
-            className="instagram-icon"
+            className={"instagram-icon"}
           >
             <FaInstagram size={20} />
           </Link>
