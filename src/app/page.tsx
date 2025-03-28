@@ -3,6 +3,7 @@ import "./home.css";
 import ScrollLinks from "../../components/scrollLinks/scrollLinks";
 import { HomeArquitetura } from "../../components/home";
 import { HomeInterioes } from "../../components/home/interioes";
+import { HomeComercial } from "../../components/home/comercial";
 
 export default function Home() {
   return (
@@ -17,11 +18,8 @@ export default function Home() {
       <div id="interiores">
         <HomeInterioes />
       </div>
-      <div
-        id="comercial"
-        style={{ height: "100vh", backgroundColor: "lightcoral" }}
-      >
-        <h2>COMERCIAL</h2>
+      <div id="comercial">
+        <HomeComercial />
       </div>
     </>
   );
