@@ -1,11 +1,11 @@
 import Image from "next/image";
-import ImagemGR from "../../../public/imageGR.jpg";
+import ImageGeR from "../../../public/ReG.jpg";
 import "./styles.css";
 
 export default function Escritorio() {
   return (
     <div className="container">
-      <Image src={ImagemGR} alt="Imagem" width={500} height={300} />
+      <Image src={ImageGeR} alt="Imagem" width={500} height={300} />
       <span>O ESCRITÓRIO</span>
       <p>
         - PONTO3 ARQUITETURA por Gesiel Soares e Raphael Barbosa, desde 2013. Em

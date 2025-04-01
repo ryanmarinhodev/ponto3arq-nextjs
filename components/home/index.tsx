@@ -4,7 +4,7 @@ import { ScrollTop } from "../scroll-top/scroll";
 
 import casaAT from "../../public/assets/arquitetura/casaAt/2-CAPA.webp";
 import casaEHE from "../../public/assets/arquitetura/casaEhe/05.webp";
-import casaFEL from "../../public/assets/arquitetura/casaFEL/1.webp";
+import casaFEL from "../../public/assets/arquitetura/casaFel/1.webp";
 import CasaGLC from "../../public/assets/arquitetura/casaGlc/glc1-_1_.webp";
 import casaIEG from "../../public/assets/arquitetura/casaIEG/casaieg1-_1_.webp";
 import casaLCF from "../../public/assets/arquitetura/casaLCF/02-capa.webp";
